@@ -39,7 +39,7 @@ const Shop = () => {
 	}, [products])
 
 	const handleAddToCart = (product) => {
-		let newCart = []
+		let newCart = [];
 		const exists = cart.find(pd => pd.id === product.id);
 		if (!exists) {
 			product.quantity = 1;
